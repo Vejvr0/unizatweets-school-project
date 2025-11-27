@@ -1,0 +1,41 @@
+For install MongoDB:
+
+Go to: https://www.mongodb.com/try/download/community
+Install mongoldb-windows-x86_64-8.2.2-signed.msi
+
+Install MongoDB on your PC
+	- SetUp "Complete"
+	- Instal MongoDB as Service "ON"
+	- Select "Run service as Network Service user"
+	- Press "Next"
+	- Instal MongoDB Compass "ON"
+	- Press "Next"
+	- Press "Install"
+	- Press "Finish"
+
+Open MongoDB Compass
+	- Add new connection (You need receive link: "mongoldb://localhost:27017")
+	- Create new database with name "database" and add collection with name "User"
+
+
+
+
+For startup server:
+
+- WINDOWS + R
+- CMD
+- go to PATH >cd C:/Users/.../dist/backend
+- >winget install OpenJS.NodeJS.LTS
+- >nom install
+- >node server.js (for run server)
+
+If you receive in CMD "Server beží na porte 3000" and "MongoDB je pripojená" then everything works fine.
+
+OPEN YOUR PROJECT ON ONE OF THESE ADDRESSES:
+	- http://localhost:5500/
+	- http://localhost:8888/
+	- http://localhost:8080/
+
+TIP: use Google Chrome
+
+RAW project: https://github.com/Vejvr0/unizatweets-school-project

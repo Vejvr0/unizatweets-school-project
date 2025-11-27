@@ -1,0 +1,118 @@
+.user-box {
+    position: relative;
+    width: min(1152px, 100%);
+    margin: 0 auto;
+    padding: 64px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.user-box i {
+    width: 256px;
+    height: 256px;
+    background-image: url('../assets/user.svg');
+    background-size: cover;
+}
+
+.user-box span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.user-box::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #999;
+}
+
+.user-info-box {
+    width: min(1152px, 100%);
+    margin: 0 auto;
+    padding: 64px 24px 200px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.user-info-box input {
+    height: 40px;
+    font-size: 1rem;
+    padding: 0 6px;
+    outline: none;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 12px;
+}
+
+.user-info-box input:focus {
+    border: 2px solid #2b3a64;
+}
+
+.user-info-box .button-box {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.user-info-box button {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    appearance: none;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 24px auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-info-box button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 900px) {
+    .user-info-box {
+        grid-template-columns: 1fr;
+    }
+
+    .user-info-box .button-box {
+        flex-direction: column;
+    }
+
+    .user-box i {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .user-box {
+        padding: 48px 16px;
+    }
+
+    .user-info-box {
+        padding: 48px 16px 160px 16px;
+    }
+
+    .user-box span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .user-info-box button {
+        width: 100%;
+    }
+}

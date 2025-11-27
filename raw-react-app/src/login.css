@@ -1,0 +1,77 @@
+.form-overlay {
+    min-height: 100vh;
+    background: #2b3a64;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.form {
+    width: min(480px, 100%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #f8f6f0;
+    border-radius: 12px;
+    border: 6px solid #0e1b3f;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    padding: 24px;
+}
+
+.form input {
+    height: 40px;
+    font-size: 1rem;
+    padding: 0 6px;
+    outline: none;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 12px;
+}
+
+.form input:focus {
+    border: 2px solid #2b3a64;
+}
+
+.form button {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    appearance: none;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 24px auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form button:active {
+    transform: scale(0.98);
+}
+
+.form span {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    text-align: center;
+    color: #2e5bd7;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .form {
+        padding: 20px;
+        border-width: 4px;
+        gap: 16px;
+    }
+
+    .form button {
+        width: 100%;
+    }
+}
